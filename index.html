@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>contact me</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <div class="container-lg">
+      <h1>CONTACT ME</h1>
+      <br><br>
+
+<div class="row" >
+
+<div class="col col-lg-6 col-md-12  contact-item">
+  <img class="image" src="images/mypic.jpg" alt="my image here">
+</div>
+<div class="col col-lg-6 col-md-12  contact-item">
+
+        <p>Name : Nkeh Jessy</p>
+        <p> phone: +237-650-54-85-52</p>
+        <p>email: nkehhotter@gmail.com</p>
+
+</div>
+
+</div>
+<section id="area" >
+  <div class="item" >
+    <input type="text" id="new" value="add item on page" >
+    <button class="button" type="button" name="button">+</button>
+  </div>
+</section>
+
+    </div>
+
+
+<script type="text/javascript">
+  function appendItem() {
+     const item = document.getElementById("new").value;
+
+     var element = document.createElement("p");
+      element.textContent=item;
+      const area = document.getElementById("area");
+      area.appendChild(element);
+
+
+
+  }
+  document.querySelector("button").addEventListener("click", appendItem);
+  document.querySelector("#new").addEventListener("keydown", appendItem);
+
+</script>
+  </body>
+</html>
